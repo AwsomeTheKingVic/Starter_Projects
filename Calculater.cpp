@@ -7,7 +7,6 @@ void Calculater::StartUp() {
     //gettings user input
     std::cout << "Type First Number in\n";
     std::cin >> userInPut1;
-
     std::cout << "Type Second Number\n";
     std::cin >> userInPut2;
 
