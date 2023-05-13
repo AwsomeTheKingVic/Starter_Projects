@@ -29,8 +29,10 @@ void HangMan::StartUp()
 
 		std::cin >> letter;
 
+		//for the size of the string checks every letters to see if it matches user letter
 		for (int i = 0; i < word.size(); ++i) {
 
+			//if statement to compare letter string with substring and replace location with letter if needed
 			if (letter.compare(word.substr(i, 1)) == 0) {
 
 				std::cout << letter << '\t' << word.substr(i, 1) << '\n';
@@ -41,10 +43,12 @@ void HangMan::StartUp()
 
 		}
 
+		//adds to counter every time the code run
 		attemptCNTR++;
 		
 	}
 
+	//winning display
 	std::cout << "you got it\n";
 	std::cout << wordDisplay << " took you: " << attemptCNTR << " Attempts\n";
 
