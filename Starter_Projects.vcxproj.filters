@@ -24,12 +24,18 @@
     <ClCompile Include="RandomNumberGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HangMan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Calculater.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RandomNumberGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HangMan.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

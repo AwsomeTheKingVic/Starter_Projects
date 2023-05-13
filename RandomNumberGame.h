@@ -5,7 +5,7 @@ class RandomNumberGame
 {
 
 	//variables
-	int startingNumber, endingNumber, theRandomNumber, userInPut, guessCNTR = 0;
+	int startingNumber = 0, endingNumber = 0, theRandomNumber = 0, userInPut = 0, guessCNTR = 0;
 	
 public:
 
