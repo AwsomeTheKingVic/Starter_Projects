@@ -34,15 +34,21 @@ void RandomNumberGame::StartUp()
 
 			std::cout << "Number is greater then the number choosen\n";
 
+			guessCNTR++;
+
 		}
 		else if (userInPut < theRandomNumber) {
 		
 			std::cout << "Number is Less then the number choosen\n";
 		
+			guessCNTR++;
+
 		}
 		else {
 
 			std::cout << "You got it\n";
+
+			std::cout << "Guesses " << guessCNTR << '\n';
 
 		}
 
