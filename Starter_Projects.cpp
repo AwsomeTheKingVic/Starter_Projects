@@ -2,6 +2,7 @@
 #include <random>
 #include "Calculater.h"
 #include "RandomNumberGame.h"
+#include "HangMan.h"
 
 int main()
 {
@@ -9,6 +10,7 @@ int main()
     //classes being added
     Calculater Calculater;
     RandomNumberGame RandomNumberGame;
+    HangMan HangMan;
 
     //main class variables
     bool exit = false;
@@ -19,7 +21,7 @@ int main()
 
         //askes for user choice to pick between clasess
         std::cout << "What would you like to do\n";
-        std::cout << "Use Calculater(1), RandomNumberGame(2)\n";
+        std::cout << "Use Calculater(1), RandomNumberGame(2), HangMan(3)\n";
 
         std::cin >> choice;
 
@@ -36,6 +38,12 @@ int main()
             case 2:
 
                 RandomNumberGame.StartUp();
+
+                break;
+
+            case 3:
+
+                HangMan.StartUp();
 
                 break;
 
