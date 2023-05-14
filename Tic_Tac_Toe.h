@@ -5,7 +5,7 @@ class Tic_Tac_Toe
 	//variables
 	char gameBoard[9] = {'1','2','3','4','5','6','7','8','9'};
 	bool isPlayer1 = true;
-	int choice = 0, location;
+	int choice = 0, location = 0;
 
 public:
 

@@ -4,6 +4,7 @@
 #include "RandomNumberGame.h"
 #include "HangMan.h"
 #include "Tic_Tac_Toe.h"
+#include "LibraryManagementSystem.h"
 
 /*
 -go back through and rework and add something new to code
@@ -18,6 +19,7 @@ int main()
     RandomNumberGame RandomNumberGame;
     HangMan HangMan;
     Tic_Tac_Toe Tic_Tac_Toe;
+    LibraryManagementSystem LibraryManagementSystem;
 
     //main class variables
     bool exit = false;
@@ -30,7 +32,7 @@ int main()
 
         //askes for user choice to pick between clasess
         std::cout << "What would you like to do\n";
-        std::cout << "Use Calculater(1), RandomNumberGame(2), HangMan(3), Tic-Tac-Toe(4)\n";
+        std::cout << "Use Calculater(1), RandomNumberGame(2), HangMan(3), Tic-Tac-Toe(4), LibrarySystem(5), Exit(6)\n";
 
         std::cin >> choice;
 
@@ -61,6 +63,21 @@ int main()
 
                 break;
 
+            case 5:
+
+                LibraryManagementSystem.StartUp();
+
+                break;
+
+            case 6:
+
+                //allows the user to leave or keep goin
+                std::cout << "Would you like to go exit(0 = false | 1 = true)\n";
+
+                std::cin >> exit;
+
+                break;
+
             default:
 
                 std::cout << "I guess it was nothing\n";
@@ -68,11 +85,6 @@ int main()
                 break;
 
         }
-
-        //allows the user to leave or keep goin
-        std::cout << "Would you like to go exit(0 = false | 1 = true)\n";
-
-        std::cin >> exit;
 
     }
     
