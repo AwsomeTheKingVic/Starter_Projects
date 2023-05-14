@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
-
+/*
+--no ideas for header yet
+*/
 
 class HangMan
 {

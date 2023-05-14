@@ -1,5 +1,9 @@
 #include <iostream>
 #include "Calculater.h"
+/*
+-add a vector to allow the user to keep adding numbers with the ability to do math between two numbers nothing more for now
+-polish
+*/
 
 //is the start up for this class
 void Calculater::StartUp() {

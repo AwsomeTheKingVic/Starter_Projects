@@ -143,11 +143,13 @@
     <ClCompile Include="HangMan.cpp" />
     <ClCompile Include="RandomNumberGame.cpp" />
     <ClCompile Include="Starter_Projects.cpp" />
+    <ClCompile Include="Tic_Tac_Toe.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Calculater.h" />
     <ClInclude Include="HangMan.h" />
     <ClInclude Include="RandomNumberGame.h" />
+    <ClInclude Include="Tic_Tac_Toe.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,6 +3,12 @@
 #include "Calculater.h"
 #include "RandomNumberGame.h"
 #include "HangMan.h"
+#include "Tic_Tac_Toe.h"
+
+/*
+-go back through and rework and add something new to code
+-polish
+*/
 
 int main()
 {
@@ -11,6 +17,7 @@ int main()
     Calculater Calculater;
     RandomNumberGame RandomNumberGame;
     HangMan HangMan;
+    Tic_Tac_Toe Tic_Tac_Toe;
 
     //main class variables
     bool exit = false;
@@ -19,16 +26,17 @@ int main()
     //Menu
     while (!exit) {
 
+        system("cls");
+
         //askes for user choice to pick between clasess
         std::cout << "What would you like to do\n";
-        std::cout << "Use Calculater(1), RandomNumberGame(2), HangMan(3)\n";
+        std::cout << "Use Calculater(1), RandomNumberGame(2), HangMan(3), Tic-Tac-Toe(4)\n";
 
         std::cin >> choice;
 
         switch (choice)
         {
         
-            //calculater
             case 1:
 
                 Calculater.StartUp();
@@ -44,6 +52,12 @@ int main()
             case 3:
 
                 HangMan.StartUp();
+
+                break;
+
+            case 4:
+
+                Tic_Tac_Toe.StartUp();
 
                 break;
 
