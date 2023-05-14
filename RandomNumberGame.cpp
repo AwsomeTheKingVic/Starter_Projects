@@ -1,6 +1,10 @@
 #include <iostream>
 #include <stdexcept>
+#include <random>
 #include "RandomNumberGame.h"
+/*
+-polish
+*/
 
 //is the startup for the random game
 void RandomNumberGame::StartUp()

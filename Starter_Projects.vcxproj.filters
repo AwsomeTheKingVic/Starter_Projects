@@ -27,6 +27,9 @@
     <ClCompile Include="HangMan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Tic_Tac_Toe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Calculater.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="HangMan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tic_Tac_Toe.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

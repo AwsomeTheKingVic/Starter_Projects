@@ -1,5 +1,8 @@
 #pragma once
 #include <random>
+/*
+--no ideas for header yet
+*/
 
 class RandomNumberGame
 {

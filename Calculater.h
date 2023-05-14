@@ -1,4 +1,8 @@
 #pragma once
+/*
+--no ideas for header yet
+*/
+
 class Calculater
 {
 

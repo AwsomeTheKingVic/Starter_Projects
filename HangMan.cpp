@@ -1,5 +1,11 @@
 #include "HangMan.h"
 #include <iostream>
+/*
+-Add FileReader and Writer
+allow the user to basically save their words into txt file to call back later
+-change letter into char to allow only one letter to be sent to the program
+-polish
+*/
 
 //start up for the hangman
 void HangMan::StartUp()
@@ -35,8 +41,6 @@ void HangMan::StartUp()
 			//if statement to compare letter string with substring and replace location with letter if needed
 			if (letter.compare(word.substr(i, 1)) == 0) {
 
-				std::cout << letter << '\t' << word.substr(i, 1) << '\n';
-
 				wordDisplay.replace(i, 1, letter);
 
 			}
@@ -50,6 +54,6 @@ void HangMan::StartUp()
 
 	//winning display
 	std::cout << "you got it\n";
-	std::cout << wordDisplay << " took you: " << attemptCNTR << " Attempts\n";
+	std::cout << "the word was: " << wordDisplay << " took you: " << attemptCNTR << " Attempts\n";
 
 }
