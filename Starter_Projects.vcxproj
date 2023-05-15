@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ATM.cpp" />
     <ClCompile Include="Calculater.cpp" />
     <ClCompile Include="HangMan.cpp" />
     <ClCompile Include="LibraryManagementSystem.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="Tic_Tac_Toe.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ATM.h" />
     <ClInclude Include="Calculater.h" />
     <ClInclude Include="HangMan.h" />
     <ClInclude Include="LibraryManagementSystem.h" />
