@@ -1,20 +1,30 @@
 #include "ATM.h"
 #include <iostream>
 
+/*
+--basics are done rework code to shrink the lines of code
+--add pin code 
+--polish
+*/
+
+//the start of the class
 void ATM::StartUp()
 {
 
+	//reset the variables
 	exit = false;
-
 	choice = 0;
 
+	//keep the user in the class until ready to leave
 	while (!exit)
 	{
 
+		//allows the user to pick their options
 		std::cout << "Saving(1), Checking(2), ShowInformation(3), Deposit or Withdraw(4), AddAccount(5), DeleteAccount(6), Logout(7)\n";
 
 		std::cin >> choice;
 
+		//on choice gives them a pick
 		switch (choice)
 		{
 
@@ -68,12 +78,15 @@ void ATM::StartUp()
 
 }
 
+//Combine saving and checking accounts as one
 //prints all of the saving account
 void ATM::PrintSavings()
 {
 
+
 	std::cout << "==========SAVING============\n";
 
+	//gets the size of the list and if its not zero it will prints out the information otherwise let the user know their is no account
 	if (savingAccountList.size() != 0) {
 
 		for (int i = 0; i < savingAccountList.size(); i++) {
@@ -99,6 +112,7 @@ void ATM::PrintChecking()
 
 	std::cout << "==========CHECKING============\n";
 
+	//gets the size of the list and if its not zero it will prints out the information otherwise let the user know their is no account
 	if (checkingAccountList.size() != 0) {
 
 		for (int i = 0; i < checkingAccountList.size(); i++) {
@@ -122,6 +136,7 @@ void ATM::PrintChecking()
 void ATM::AddAccount()
 {
 
+	//reset the variables
 	choice = 0;
 	leave = false;
 
@@ -194,6 +209,7 @@ void ATM::AddAccount()
 void ATM::DeleteAccount()
 {
 
+	//reset the variables
 	choice = 0;
 	location = 0;
 	leave = false;
@@ -258,6 +274,7 @@ void ATM::DeleteAccount()
 
 void ATM::PrintInfo() {
 
+	//reset the variables
 	choice = 0;
 	location = 0;
 	leave = false;
@@ -265,10 +282,12 @@ void ATM::PrintInfo() {
 	while (!leave)
 	{
 
+		//askes them what account they would like to see
 		std::cout << "What information would you like to see Saving(1), Checking(2), Exit(3)\n";
 
 		std::cin >> choice;
 
+		//they choose either saving or checking giving them the option to select the index number which shows them the account information
 		switch (choice)
 		{
 		
@@ -310,6 +329,7 @@ void ATM::PrintInfo() {
 
 void ATM::DepositWithdraw() {
 
+	//reset the variables
 	choice = 0;
 	location = 0;
 	leave = false;
@@ -321,6 +341,7 @@ void ATM::DepositWithdraw() {
 
 		std::cin >> choice;
 
+		//lets the user pick between depositing or withdrawing for both account types
 		switch (choice)
 		{
 
@@ -330,6 +351,7 @@ void ATM::DepositWithdraw() {
 
 				std::cin >> choice;
 
+				//ask if they are depositing or withdrawing allow them to change the valuew of the ammount in the account
 				switch (choice)
 				{
 				
@@ -373,7 +395,7 @@ void ATM::DepositWithdraw() {
 
 						if (amount > savingAccountList[location - 1].amount) {
 
-							std::cout << "amount greater the in account\n";
+							std::cout << "amount greater then in account\n";
 
 						}
 						else {
@@ -399,6 +421,7 @@ void ATM::DepositWithdraw() {
 				switch (choice)
 				{
 
+					//ask if they are depositing or withdrawing allow them to change the valuew of the ammount in the account
 					case 1:
 
 						amount = 0;
@@ -439,7 +462,7 @@ void ATM::DepositWithdraw() {
 
 						if (amount > checkingAccountList[location - 1].amount) {
 
-							std::cout << "amount greater the in account\n";
+							std::cout << "amount greater then in account\n";
 
 						}
 						else {

@@ -5,6 +5,7 @@
 #include "Tic_Tac_Toe.h"
 #include "LibraryManagementSystem.h"
 #include "ATM.h"
+#include "ChessGame.h"
 
 /*
 -go back through and rework and add something new to code
@@ -21,6 +22,7 @@ int main()
     Tic_Tac_Toe Tic_Tac_Toe;
     LibraryManagementSystem LibraryManagementSystem;
     ATM ATM;
+    ChessGame ChessGame;
 
     //main class variables
     bool exit = false;
@@ -34,7 +36,7 @@ int main()
         //askes for user choice to pick between clasess
         std::cout << "What would you like to do\n";
         std::cout << "Use Calculater(1), RandomNumberGame(2), HangMan(3), Tic-Tac-Toe(4), LibrarySystem(5)\n";
-        std::cout << "ATM(6), (7), (8), (9), (10), Exit(11)\n";
+        std::cout << "ATM(6), ChessGame(7), (8), (9), (10), Exit(11)\n";
 
         std::cin >> choice;
 
@@ -79,7 +81,7 @@ int main()
 
             case 7:
 
-
+                ChessGame.StartUp();
 
                 break;
 
