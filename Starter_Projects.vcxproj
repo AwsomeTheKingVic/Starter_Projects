@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="ATM.cpp" />
     <ClCompile Include="Calculater.cpp" />
+    <ClCompile Include="ChessGame.cpp" />
     <ClCompile Include="HangMan.cpp" />
     <ClCompile Include="LibraryManagementSystem.cpp" />
     <ClCompile Include="RandomNumberGame.cpp" />
@@ -150,6 +151,7 @@
   <ItemGroup>
     <ClInclude Include="ATM.h" />
     <ClInclude Include="Calculater.h" />
+    <ClInclude Include="ChessGame.h" />
     <ClInclude Include="HangMan.h" />
     <ClInclude Include="LibraryManagementSystem.h" />
     <ClInclude Include="RandomNumberGame.h" />
